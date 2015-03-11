@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		896912A31AAFEE4C00B0A760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912A21AAFEE4C00B0A760 /* AppDelegate.swift */; };
-		896912A51AAFEE4C00B0A760 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 896912A41AAFEE4C00B0A760 /* GameScene.sks */; };
+		896912A51AAFEE4C00B0A760 /* DemoListScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 896912A41AAFEE4C00B0A760 /* DemoListScene.sks */; };
 		896912A71AAFEE4C00B0A760 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912A61AAFEE4C00B0A760 /* GameScene.swift */; };
 		896912A91AAFEE4C00B0A760 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912A81AAFEE4C00B0A760 /* GameViewController.swift */; };
 		896912AC1AAFEE4C00B0A760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896912AA1AAFEE4C00B0A760 /* Main.storyboard */; };
 		896912AE1AAFEE4C00B0A760 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896912AD1AAFEE4C00B0A760 /* Images.xcassets */; };
 		896912B11AAFEE4C00B0A760 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896912AF1AAFEE4C00B0A760 /* LaunchScreen.xib */; };
 		896912BD1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912BC1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift */; };
+		896912CC1AB089C200B0A760 /* DemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912CB1AB089C200B0A760 /* DemoListScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,7 @@
 		8969129D1AAFEE4B00B0A760 /* KungFu_SpriteKitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KungFu_SpriteKitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896912A11AAFEE4C00B0A760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896912A21AAFEE4C00B0A760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		896912A41AAFEE4C00B0A760 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		896912A41AAFEE4C00B0A760 /* DemoListScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DemoListScene.sks; sourceTree = "<group>"; };
 		896912A61AAFEE4C00B0A760 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		896912A81AAFEE4C00B0A760 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		896912AB1AAFEE4C00B0A760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		896912B61AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KungFu_SpriteKitGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		896912BB1AAFEE4C00B0A760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896912BC1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KungFu_SpriteKitGameTests.swift; sourceTree = "<group>"; };
+		896912CB1AB089C200B0A760 /* DemoListScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoListScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				896912A21AAFEE4C00B0A760 /* AppDelegate.swift */,
-				896912A41AAFEE4C00B0A760 /* GameScene.sks */,
+				896912A41AAFEE4C00B0A760 /* DemoListScene.sks */,
+				896912CB1AB089C200B0A760 /* DemoListScene.swift */,
 				896912A61AAFEE4C00B0A760 /* GameScene.swift */,
 				896912A81AAFEE4C00B0A760 /* GameViewController.swift */,
 				896912AA1AAFEE4C00B0A760 /* Main.storyboard */,
@@ -200,7 +203,7 @@
 			files = (
 				896912B11AAFEE4C00B0A760 /* LaunchScreen.xib in Resources */,
 				896912AE1AAFEE4C00B0A760 /* Images.xcassets in Resources */,
-				896912A51AAFEE4C00B0A760 /* GameScene.sks in Resources */,
+				896912A51AAFEE4C00B0A760 /* DemoListScene.sks in Resources */,
 				896912AC1AAFEE4C00B0A760 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +224,7 @@
 			files = (
 				896912A71AAFEE4C00B0A760 /* GameScene.swift in Sources */,
 				896912A91AAFEE4C00B0A760 /* GameViewController.swift in Sources */,
+				896912CC1AB089C200B0A760 /* DemoListScene.swift in Sources */,
 				896912A31AAFEE4C00B0A760 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +419,7 @@
 				896912C21AAFEE4C00B0A760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		896912C31AAFEE4C00B0A760 /* Build configuration list for PBXNativeTarget "KungFu_SpriteKitGameTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				896912C51AAFEE4C00B0A760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
