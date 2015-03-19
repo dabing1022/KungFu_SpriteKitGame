@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890E27221AB5628A006C0CCE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E27211AB5628A006C0CCE /* State.swift */; };
+		890E27251AB57056006C0CCE /* BaseGameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E27241AB57056006C0CCE /* BaseGameEntity.swift */; };
+		890E27271AB57508006C0CCE /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E27261AB57508006C0CCE /* World.swift */; };
+		890E27291AB5752F006C0CCE /* Telegram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E27281AB5752F006C0CCE /* Telegram.swift */; };
+		890E272B1AB5788A006C0CCE /* FiniteStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E272A1AB5788A006C0CCE /* FiniteStateMachine.swift */; };
+		890E272D1AB578D9006C0CCE /* MessageDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E272C1AB578D9006C0CCE /* MessageDispatcher.swift */; };
+		890E272F1AB5941F006C0CCE /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E272E1AB5941F006C0CCE /* EntityManager.swift */; };
 		896912A31AAFEE4C00B0A760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912A21AAFEE4C00B0A760 /* AppDelegate.swift */; };
-		896912A51AAFEE4C00B0A760 /* DemoListScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 896912A41AAFEE4C00B0A760 /* DemoListScene.sks */; };
+		896912A51AAFEE4C00B0A760 /* PhysicsFieldTestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 896912A41AAFEE4C00B0A760 /* PhysicsFieldTestScene.sks */; };
 		896912A71AAFEE4C00B0A760 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912A61AAFEE4C00B0A760 /* GameScene.swift */; };
 		896912A91AAFEE4C00B0A760 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912A81AAFEE4C00B0A760 /* GameViewController.swift */; };
 		896912AC1AAFEE4C00B0A760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896912AA1AAFEE4C00B0A760 /* Main.storyboard */; };
@@ -16,6 +23,17 @@
 		896912B11AAFEE4C00B0A760 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896912AF1AAFEE4C00B0A760 /* LaunchScreen.xib */; };
 		896912BD1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912BC1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift */; };
 		896912CC1AB089C200B0A760 /* DemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912CB1AB089C200B0A760 /* DemoListScene.swift */; };
+		898BBF6C1AB970A2003F8952 /* SquareTurtle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BBF6B1AB970A2003F8952 /* SquareTurtle.swift */; };
+		898BBF6E1AB973D0003F8952 /* TurtlesTestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BBF6D1AB973D0003F8952 /* TurtlesTestScene.swift */; };
+		898BBF701AB98068003F8952 /* SKSTestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 898BBF6F1AB98068003F8952 /* SKSTestScene.sks */; };
+		898BBF721AB980CE003F8952 /* SKSTestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BBF711AB980CE003F8952 /* SKSTestScene.swift */; };
+		89A48DCD1ABA5F7200721D9C /* PhysicsFieldTestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A48DCC1ABA5F7200721D9C /* PhysicsFieldTestScene.swift */; };
+		89A48DCF1ABA72A700721D9C /* PhysicsMagneticFieldTestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A48DCE1ABA72A700721D9C /* PhysicsMagneticFieldTestScene.swift */; };
+		89A48DD21ABA816F00721D9C /* Shader01.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 89A48DD11ABA816F00721D9C /* Shader01.fsh */; };
+		89A48DD61ABA85C000721D9C /* BallTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 89A48DD41ABA85C000721D9C /* BallTrail.sks */; };
+		89A48DD71ABA85C000721D9C /* BallTrail2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 89A48DD51ABA85C000721D9C /* BallTrail2.sks */; };
+		89DFA4881AB99AEA00B76945 /* InverseKinematicsTestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFA4871AB99AEA00B76945 /* InverseKinematicsTestScene.swift */; };
+		89DFA48A1AB99B0600B76945 /* InverseKinematicsTestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 89DFA4891AB99B0600B76945 /* InverseKinematicsTestScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		890E27211AB5628A006C0CCE /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		890E27241AB57056006C0CCE /* BaseGameEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameEntity.swift; sourceTree = "<group>"; };
+		890E27261AB57508006C0CCE /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		890E27281AB5752F006C0CCE /* Telegram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Telegram.swift; sourceTree = "<group>"; };
+		890E272A1AB5788A006C0CCE /* FiniteStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiniteStateMachine.swift; sourceTree = "<group>"; };
+		890E272C1AB578D9006C0CCE /* MessageDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDispatcher.swift; sourceTree = "<group>"; };
+		890E272E1AB5941F006C0CCE /* EntityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
 		8969129D1AAFEE4B00B0A760 /* KungFu_SpriteKitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KungFu_SpriteKitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896912A11AAFEE4C00B0A760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896912A21AAFEE4C00B0A760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		896912A41AAFEE4C00B0A760 /* DemoListScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DemoListScene.sks; sourceTree = "<group>"; };
+		896912A41AAFEE4C00B0A760 /* PhysicsFieldTestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PhysicsFieldTestScene.sks; sourceTree = "<group>"; };
 		896912A61AAFEE4C00B0A760 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		896912A81AAFEE4C00B0A760 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		896912AB1AAFEE4C00B0A760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +67,17 @@
 		896912BB1AAFEE4C00B0A760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896912BC1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KungFu_SpriteKitGameTests.swift; sourceTree = "<group>"; };
 		896912CB1AB089C200B0A760 /* DemoListScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoListScene.swift; sourceTree = "<group>"; };
+		898BBF6B1AB970A2003F8952 /* SquareTurtle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareTurtle.swift; sourceTree = "<group>"; };
+		898BBF6D1AB973D0003F8952 /* TurtlesTestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurtlesTestScene.swift; sourceTree = "<group>"; };
+		898BBF6F1AB98068003F8952 /* SKSTestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SKSTestScene.sks; sourceTree = "<group>"; };
+		898BBF711AB980CE003F8952 /* SKSTestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSTestScene.swift; sourceTree = "<group>"; };
+		89A48DCC1ABA5F7200721D9C /* PhysicsFieldTestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsFieldTestScene.swift; sourceTree = "<group>"; };
+		89A48DCE1ABA72A700721D9C /* PhysicsMagneticFieldTestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsMagneticFieldTestScene.swift; sourceTree = "<group>"; };
+		89A48DD11ABA816F00721D9C /* Shader01.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader01.fsh; sourceTree = "<group>"; };
+		89A48DD41ABA85C000721D9C /* BallTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail.sks; sourceTree = "<group>"; };
+		89A48DD51ABA85C000721D9C /* BallTrail2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail2.sks; sourceTree = "<group>"; };
+		89DFA4871AB99AEA00B76945 /* InverseKinematicsTestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InverseKinematicsTestScene.swift; sourceTree = "<group>"; };
+		89DFA4891AB99B0600B76945 /* InverseKinematicsTestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = InverseKinematicsTestScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +98,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890E271F1AB55858006C0CCE /* ButterflyAI */ = {
+			isa = PBXGroup;
+			children = (
+				890E27231AB5704D006C0CCE /* entities */,
+				890E27201AB55DB5006C0CCE /* fsm */,
+				890E27261AB57508006C0CCE /* World.swift */,
+			);
+			path = ButterflyAI;
+			sourceTree = "<group>";
+		};
+		890E27201AB55DB5006C0CCE /* fsm */ = {
+			isa = PBXGroup;
+			children = (
+				890E27211AB5628A006C0CCE /* State.swift */,
+				890E27281AB5752F006C0CCE /* Telegram.swift */,
+				890E272A1AB5788A006C0CCE /* FiniteStateMachine.swift */,
+				890E272C1AB578D9006C0CCE /* MessageDispatcher.swift */,
+			);
+			path = fsm;
+			sourceTree = "<group>";
+		};
+		890E27231AB5704D006C0CCE /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				890E27241AB57056006C0CCE /* BaseGameEntity.swift */,
+				890E272E1AB5941F006C0CCE /* EntityManager.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
 		896912941AAFEE4B00B0A760 = {
 			isa = PBXGroup;
 			children = (
@@ -83,10 +149,21 @@
 		8969129F1AAFEE4B00B0A760 /* KungFu_SpriteKitGame */ = {
 			isa = PBXGroup;
 			children = (
+				89A48DD31ABA859F00721D9C /* Particles */,
+				89A48DD01ABA815A00721D9C /* Shader */,
+				898BBF6A1AB97087003F8952 /* SquareTurtles */,
+				890E271F1AB55858006C0CCE /* ButterflyAI */,
 				896912A21AAFEE4C00B0A760 /* AppDelegate.swift */,
-				896912A41AAFEE4C00B0A760 /* DemoListScene.sks */,
-				896912CB1AB089C200B0A760 /* DemoListScene.swift */,
 				896912A61AAFEE4C00B0A760 /* GameScene.swift */,
+				896912A41AAFEE4C00B0A760 /* PhysicsFieldTestScene.sks */,
+				89A48DCC1ABA5F7200721D9C /* PhysicsFieldTestScene.swift */,
+				89A48DCE1ABA72A700721D9C /* PhysicsMagneticFieldTestScene.swift */,
+				898BBF6F1AB98068003F8952 /* SKSTestScene.sks */,
+				898BBF711AB980CE003F8952 /* SKSTestScene.swift */,
+				89DFA4891AB99B0600B76945 /* InverseKinematicsTestScene.sks */,
+				89DFA4871AB99AEA00B76945 /* InverseKinematicsTestScene.swift */,
+				898BBF6D1AB973D0003F8952 /* TurtlesTestScene.swift */,
+				896912CB1AB089C200B0A760 /* DemoListScene.swift */,
 				896912A81AAFEE4C00B0A760 /* GameViewController.swift */,
 				896912AA1AAFEE4C00B0A760 /* Main.storyboard */,
 				896912AD1AAFEE4C00B0A760 /* Images.xcassets */,
@@ -119,6 +196,31 @@
 				896912BB1AAFEE4C00B0A760 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		898BBF6A1AB97087003F8952 /* SquareTurtles */ = {
+			isa = PBXGroup;
+			children = (
+				898BBF6B1AB970A2003F8952 /* SquareTurtle.swift */,
+			);
+			path = SquareTurtles;
+			sourceTree = "<group>";
+		};
+		89A48DD01ABA815A00721D9C /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				89A48DD11ABA816F00721D9C /* Shader01.fsh */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		89A48DD31ABA859F00721D9C /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				89A48DD41ABA85C000721D9C /* BallTrail.sks */,
+				89A48DD51ABA85C000721D9C /* BallTrail2.sks */,
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				896912B11AAFEE4C00B0A760 /* LaunchScreen.xib in Resources */,
+				89DFA48A1AB99B0600B76945 /* InverseKinematicsTestScene.sks in Resources */,
 				896912AE1AAFEE4C00B0A760 /* Images.xcassets in Resources */,
-				896912A51AAFEE4C00B0A760 /* DemoListScene.sks in Resources */,
+				89A48DD61ABA85C000721D9C /* BallTrail.sks in Resources */,
+				896912A51AAFEE4C00B0A760 /* PhysicsFieldTestScene.sks in Resources */,
+				89A48DD71ABA85C000721D9C /* BallTrail2.sks in Resources */,
+				89A48DD21ABA816F00721D9C /* Shader01.fsh in Resources */,
+				898BBF701AB98068003F8952 /* SKSTestScene.sks in Resources */,
 				896912AC1AAFEE4C00B0A760 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,9 +329,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890E272F1AB5941F006C0CCE /* EntityManager.swift in Sources */,
+				89DFA4881AB99AEA00B76945 /* InverseKinematicsTestScene.swift in Sources */,
+				89A48DCD1ABA5F7200721D9C /* PhysicsFieldTestScene.swift in Sources */,
+				89A48DCF1ABA72A700721D9C /* PhysicsMagneticFieldTestScene.swift in Sources */,
+				898BBF6E1AB973D0003F8952 /* TurtlesTestScene.swift in Sources */,
 				896912A71AAFEE4C00B0A760 /* GameScene.swift in Sources */,
+				890E27251AB57056006C0CCE /* BaseGameEntity.swift in Sources */,
+				890E27291AB5752F006C0CCE /* Telegram.swift in Sources */,
+				890E272B1AB5788A006C0CCE /* FiniteStateMachine.swift in Sources */,
+				890E272D1AB578D9006C0CCE /* MessageDispatcher.swift in Sources */,
 				896912A91AAFEE4C00B0A760 /* GameViewController.swift in Sources */,
+				898BBF721AB980CE003F8952 /* SKSTestScene.swift in Sources */,
 				896912CC1AB089C200B0A760 /* DemoListScene.swift in Sources */,
+				890E27221AB5628A006C0CCE /* State.swift in Sources */,
+				890E27271AB57508006C0CCE /* World.swift in Sources */,
+				898BBF6C1AB970A2003F8952 /* SquareTurtle.swift in Sources */,
 				896912A31AAFEE4C00B0A760 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
