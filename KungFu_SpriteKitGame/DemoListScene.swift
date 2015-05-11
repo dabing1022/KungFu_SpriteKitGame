@@ -15,7 +15,8 @@ class DemoListScene: SKScene, UITableViewDataSource, UITableViewDelegate {
         "SKSTestScene/sks" : SKSTestScene.self,
         "InverseKinematicsTestScene/sks" : InverseKinematicsTestScene.self,
         "PhysicsFieldTestScene/sks" : PhysicsFieldTestScene.self,
-        "PhysicsMagneticFieldTestScene/swift" : PhysicsMagneticFieldTestScene.self]
+        "PhysicsMagneticFieldTestScene/swift" : PhysicsMagneticFieldTestScene.self,
+        "BoxNinjaScene/swift" : BoxNinjaScene.self]
     let cellReuseID = "demoCell"
     let BACK_BUTTON_TAG = 100
     
@@ -49,7 +50,7 @@ class DemoListScene: SKScene, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseID, forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseID, forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = demos.keys.array[indexPath.row]
         
         return cell

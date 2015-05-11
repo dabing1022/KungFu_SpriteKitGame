@@ -10,8 +10,20 @@ import SpriteKit
 
 class SquareTurtle : SKSpriteNode {
     
-    convenience override init() {
+    enum HeroState {
+        case IDLE_STATE
+        case RUNNING_L_STATE
+        case RUNNING_R_STATE
+        case FLYING_ON_AIR_STATE
+    }
+
+
+    var state: HeroState!
+    convenience init() {
+
         self.init(texture: nil, color: nil, size: CGSize.zeroSize)
+        
+        state = .IDLE_STATE
     }
     
     override init(texture: SKTexture!, color: UIColor!, size: CGSize) {

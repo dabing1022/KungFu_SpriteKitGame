@@ -14,8 +14,8 @@ class SKSTestScene : GameScene {
         super.didMoveToView(view)
         super.changeBackLabelStyle(isBlackStyle: false)
         
-        let ship = self.childNodeWithName("ship") as SKSpriteNode
-        let light = ship.childNodeWithName("light2") as SKLightNode
+        let ship = self.childNodeWithName("ship") as! SKSpriteNode
+        let light = ship.childNodeWithName("light2") as! SKLightNode
         
         let greenSquare = SKSpriteNode(color: SKColor.greenColor(), size: CGSize(width: 10, height: 10))
         greenSquare.name = "greenSquare"
@@ -29,14 +29,16 @@ class SKSTestScene : GameScene {
     }
     
     
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
-        let touch = touches.anyObject() as UITouch
-        let ship = self.childNodeWithName("ship") as SKSpriteNode
-        let light = ship.childNodeWithName("light2") as SKLightNode
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+        let touch = touches.first as! UITouch
+        let ship = self.childNodeWithName("ship") as! SKSpriteNode
+        let light = ship.childNodeWithName("light2") as! SKLightNode
         let pos = touch.locationInNode(ship)
         
-        let greenSquare = self.childNodeWithName("greenSquare") as SKSpriteNode
+        let greenSquare = self.childNodeWithName("greenSquare") as! SKSpriteNode
         light.position = pos
         greenSquare.position = self.convertPoint(light.position, fromNode: ship)
+        
+        super.touchesMoved(touches, withEvent: event)
     }
 }

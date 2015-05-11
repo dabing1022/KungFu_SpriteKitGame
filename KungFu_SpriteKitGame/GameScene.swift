@@ -24,7 +24,7 @@ class GameScene: SKScene {
         self.addChild(myLabel)
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         for touch: AnyObject in touches {
             let location = touch.locationInNode(self)
             let node = self.nodeAtPoint(location)
@@ -34,10 +34,12 @@ class GameScene: SKScene {
                 self.view?.presentScene(scene, transition: transition)
             }
         }
+        
+        super.touchesBegan(touches, withEvent: event)
     }
     
     func changeBackLabelStyle(isBlackStyle black: Bool) -> Void {
-        let label = self.childNodeWithName(LABEL_NAME) as SKLabelNode
+        let label = self.childNodeWithName(LABEL_NAME) as! SKLabelNode
         label.fontColor = black ? SKColor.blackColor() : SKColor.whiteColor()
     }
 }

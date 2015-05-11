@@ -35,10 +35,10 @@ class PhysicsFieldTestScene: GameScene {
         
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
     {
         let fieldTag = childNodeWithName("FieldTag")!
-        let fieldNode = childNodeWithName("FieldNode")! as SKFieldNode
+        let fieldNode = childNodeWithName("FieldNode")! as! SKFieldNode
         let fieldCenter = childNodeWithName("PhysicsFieldCenter")!.position
         
         switch fieldType!{
@@ -184,7 +184,7 @@ class PhysicsFieldTestScene: GameScene {
             println("wrong")
         }
         
-        
+        super.touchesBegan(touches, withEvent: event)
     }
     
     func changeTagTo(tagName:String){
@@ -227,7 +227,7 @@ class PhysicsFieldTestScene: GameScene {
             ball.physicsBody?.velocity = CGVectorMake(velocity * CGFloat( cosf(CFloat(rotation))), velocity * CGFloat(sinf(CFloat(rotation))))
             ball.physicsBody?.charge = -10
             
-            let ballTrail = NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource("BallTrail2", ofType: "sks")!) as SKEmitterNode
+            let ballTrail = NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource("BallTrail2", ofType: "sks")!) as! SKEmitterNode
             ballTrail.position = CGPointMake(0, 0)
             ballTrail.targetNode = self
             

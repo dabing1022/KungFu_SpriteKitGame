@@ -29,7 +29,7 @@ class BaseGameEntity {
     var tag: String?
     var tagNo: Int = 0
     var visible: Bool = true;
-    var pos: Point?
+//    var pos: Point?
     var colRadius: Double?
     var fsm: FiniteStateMachine?
     var z: Int = 0

@@ -39,9 +39,12 @@ class PhysicsMagneticFieldTestScene : GameScene {
         self.addChild(magneticFieldNode)
     }
     
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
         for touch in touches {
+            let touch = touch as! UITouch
             magneticFieldNode.position = touch.locationInNode(self)
         }
+        
+        super.touchesBegan(touches, withEvent: event)
     }
 }
