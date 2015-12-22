@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		890E27221AB5628A006C0CCE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E27211AB5628A006C0CCE /* State.swift */; };
-		890E27251AB57056006C0CCE /* BaseGameEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E27241AB57056006C0CCE /* BaseGameEntity.swift */; };
-		890E27271AB57508006C0CCE /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E27261AB57508006C0CCE /* World.swift */; };
-		890E27291AB5752F006C0CCE /* Telegram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E27281AB5752F006C0CCE /* Telegram.swift */; };
-		890E272B1AB5788A006C0CCE /* FiniteStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E272A1AB5788A006C0CCE /* FiniteStateMachine.swift */; };
-		890E272D1AB578D9006C0CCE /* MessageDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E272C1AB578D9006C0CCE /* MessageDispatcher.swift */; };
-		890E272F1AB5941F006C0CCE /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E272E1AB5941F006C0CCE /* EntityManager.swift */; };
 		896912A31AAFEE4C00B0A760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912A21AAFEE4C00B0A760 /* AppDelegate.swift */; };
 		896912A51AAFEE4C00B0A760 /* PhysicsFieldTestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 896912A41AAFEE4C00B0A760 /* PhysicsFieldTestScene.sks */; };
 		896912A71AAFEE4C00B0A760 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912A61AAFEE4C00B0A760 /* GameScene.swift */; };
@@ -21,8 +14,10 @@
 		896912AC1AAFEE4C00B0A760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896912AA1AAFEE4C00B0A760 /* Main.storyboard */; };
 		896912AE1AAFEE4C00B0A760 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896912AD1AAFEE4C00B0A760 /* Images.xcassets */; };
 		896912B11AAFEE4C00B0A760 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896912AF1AAFEE4C00B0A760 /* LaunchScreen.xib */; };
-		896912BD1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912BC1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift */; };
 		896912CC1AB089C200B0A760 /* DemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896912CB1AB089C200B0A760 /* DemoListScene.swift */; };
+		897CC3851C29964900C7B6DA /* fear_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 897CC3841C29964900C7B6DA /* fear_bg.mp3 */; };
+		8983CD3B1C29858B00A12E10 /* SKSTestScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8983CD3A1C29858B00A12E10 /* SKSTestScene2.sks */; };
+		8983CD3D1C2985A500A12E10 /* SKSTestScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8983CD3C1C2985A500A12E10 /* SKSTestScene2.swift */; };
 		898BBF6C1AB970A2003F8952 /* SquareTurtle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BBF6B1AB970A2003F8952 /* SquareTurtle.swift */; };
 		898BBF6E1AB973D0003F8952 /* TurtlesTestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BBF6D1AB973D0003F8952 /* TurtlesTestScene.swift */; };
 		898BBF701AB98068003F8952 /* SKSTestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 898BBF6F1AB98068003F8952 /* SKSTestScene.sks */; };
@@ -33,28 +28,12 @@
 		89A48DD61ABA85C000721D9C /* BallTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 89A48DD41ABA85C000721D9C /* BallTrail.sks */; };
 		89A48DD71ABA85C000721D9C /* BallTrail2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 89A48DD51ABA85C000721D9C /* BallTrail2.sks */; };
 		89A48DDA1ABBC0F200721D9C /* BoxNinjaScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A48DD91ABBC0F200721D9C /* BoxNinjaScene.swift */; };
+		89C9CA481C252B8200766F0E /* CGPointExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9CA471C252B8200766F0E /* CGPointExtention.swift */; };
 		89DFA4881AB99AEA00B76945 /* InverseKinematicsTestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFA4871AB99AEA00B76945 /* InverseKinematicsTestScene.swift */; };
 		89DFA48A1AB99B0600B76945 /* InverseKinematicsTestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 89DFA4891AB99B0600B76945 /* InverseKinematicsTestScene.sks */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		896912B71AAFEE4C00B0A760 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 896912951AAFEE4B00B0A760 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8969129C1AAFEE4B00B0A760;
-			remoteInfo = KungFu_SpriteKitGame;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		890E27211AB5628A006C0CCE /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		890E27241AB57056006C0CCE /* BaseGameEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameEntity.swift; sourceTree = "<group>"; };
-		890E27261AB57508006C0CCE /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
-		890E27281AB5752F006C0CCE /* Telegram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Telegram.swift; sourceTree = "<group>"; };
-		890E272A1AB5788A006C0CCE /* FiniteStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiniteStateMachine.swift; sourceTree = "<group>"; };
-		890E272C1AB578D9006C0CCE /* MessageDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDispatcher.swift; sourceTree = "<group>"; };
-		890E272E1AB5941F006C0CCE /* EntityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
 		8969129D1AAFEE4B00B0A760 /* KungFu_SpriteKitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KungFu_SpriteKitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896912A11AAFEE4C00B0A760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896912A21AAFEE4C00B0A760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,10 +43,10 @@
 		896912AB1AAFEE4C00B0A760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		896912AD1AAFEE4C00B0A760 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		896912B01AAFEE4C00B0A760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		896912B61AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KungFu_SpriteKitGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		896912BB1AAFEE4C00B0A760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		896912BC1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KungFu_SpriteKitGameTests.swift; sourceTree = "<group>"; };
 		896912CB1AB089C200B0A760 /* DemoListScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoListScene.swift; sourceTree = "<group>"; };
+		897CC3841C29964900C7B6DA /* fear_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fear_bg.mp3; sourceTree = "<group>"; };
+		8983CD3A1C29858B00A12E10 /* SKSTestScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SKSTestScene2.sks; sourceTree = "<group>"; };
+		8983CD3C1C2985A500A12E10 /* SKSTestScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSTestScene2.swift; sourceTree = "<group>"; };
 		898BBF6B1AB970A2003F8952 /* SquareTurtle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareTurtle.swift; sourceTree = "<group>"; };
 		898BBF6D1AB973D0003F8952 /* TurtlesTestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurtlesTestScene.swift; sourceTree = "<group>"; };
 		898BBF6F1AB98068003F8952 /* SKSTestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SKSTestScene.sks; sourceTree = "<group>"; };
@@ -78,6 +57,7 @@
 		89A48DD41ABA85C000721D9C /* BallTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail.sks; sourceTree = "<group>"; };
 		89A48DD51ABA85C000721D9C /* BallTrail2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail2.sks; sourceTree = "<group>"; };
 		89A48DD91ABBC0F200721D9C /* BoxNinjaScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxNinjaScene.swift; sourceTree = "<group>"; };
+		89C9CA471C252B8200766F0E /* CGPointExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtention.swift; sourceTree = "<group>"; };
 		89DFA4871AB99AEA00B76945 /* InverseKinematicsTestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InverseKinematicsTestScene.swift; sourceTree = "<group>"; };
 		89DFA4891AB99B0600B76945 /* InverseKinematicsTestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = InverseKinematicsTestScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,51 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		896912B31AAFEE4C00B0A760 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		890E271F1AB55858006C0CCE /* ButterflyAI */ = {
-			isa = PBXGroup;
-			children = (
-				890E27231AB5704D006C0CCE /* entities */,
-				890E27201AB55DB5006C0CCE /* fsm */,
-				890E27261AB57508006C0CCE /* World.swift */,
-			);
-			path = ButterflyAI;
-			sourceTree = "<group>";
-		};
-		890E27201AB55DB5006C0CCE /* fsm */ = {
-			isa = PBXGroup;
-			children = (
-				890E27211AB5628A006C0CCE /* State.swift */,
-				890E27281AB5752F006C0CCE /* Telegram.swift */,
-				890E272A1AB5788A006C0CCE /* FiniteStateMachine.swift */,
-				890E272C1AB578D9006C0CCE /* MessageDispatcher.swift */,
-			);
-			path = fsm;
-			sourceTree = "<group>";
-		};
-		890E27231AB5704D006C0CCE /* entities */ = {
-			isa = PBXGroup;
-			children = (
-				890E27241AB57056006C0CCE /* BaseGameEntity.swift */,
-				890E272E1AB5941F006C0CCE /* EntityManager.swift */,
-			);
-			path = entities;
-			sourceTree = "<group>";
-		};
 		896912941AAFEE4B00B0A760 = {
 			isa = PBXGroup;
 			children = (
 				8969129F1AAFEE4B00B0A760 /* KungFu_SpriteKitGame */,
-				896912B91AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests */,
 				8969129E1AAFEE4B00B0A760 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				8969129D1AAFEE4B00B0A760 /* KungFu_SpriteKitGame.app */,
-				896912B61AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,18 +92,21 @@
 		8969129F1AAFEE4B00B0A760 /* KungFu_SpriteKitGame */ = {
 			isa = PBXGroup;
 			children = (
+				89C9CA331C2529A400766F0E /* SpriteGameplayKit */,
 				89A48DD81ABBC0DD00721D9C /* BoxNinja */,
 				89A48DD31ABA859F00721D9C /* Particles */,
 				89A48DD01ABA815A00721D9C /* Shader */,
 				898BBF6A1AB97087003F8952 /* SquareTurtles */,
-				890E271F1AB55858006C0CCE /* ButterflyAI */,
+				897CC3831C29962800C7B6DA /* Resources */,
 				896912A21AAFEE4C00B0A760 /* AppDelegate.swift */,
 				896912A61AAFEE4C00B0A760 /* GameScene.swift */,
 				896912A41AAFEE4C00B0A760 /* PhysicsFieldTestScene.sks */,
 				89A48DCC1ABA5F7200721D9C /* PhysicsFieldTestScene.swift */,
 				89A48DCE1ABA72A700721D9C /* PhysicsMagneticFieldTestScene.swift */,
 				898BBF6F1AB98068003F8952 /* SKSTestScene.sks */,
+				8983CD3A1C29858B00A12E10 /* SKSTestScene2.sks */,
 				898BBF711AB980CE003F8952 /* SKSTestScene.swift */,
+				8983CD3C1C2985A500A12E10 /* SKSTestScene2.swift */,
 				89DFA4891AB99B0600B76945 /* InverseKinematicsTestScene.sks */,
 				89DFA4871AB99AEA00B76945 /* InverseKinematicsTestScene.swift */,
 				898BBF6D1AB973D0003F8952 /* TurtlesTestScene.swift */,
@@ -184,21 +128,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		896912B91AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests */ = {
+		897CC3831C29962800C7B6DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				896912BC1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift */,
-				896912BA1AAFEE4C00B0A760 /* Supporting Files */,
+				897CC3841C29964900C7B6DA /* fear_bg.mp3 */,
 			);
-			path = KungFu_SpriteKitGameTests;
-			sourceTree = "<group>";
-		};
-		896912BA1AAFEE4C00B0A760 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				896912BB1AAFEE4C00B0A760 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		898BBF6A1AB97087003F8952 /* SquareTurtles */ = {
@@ -234,6 +169,22 @@
 			path = BoxNinja;
 			sourceTree = "<group>";
 		};
+		89C9CA331C2529A400766F0E /* SpriteGameplayKit */ = {
+			isa = PBXGroup;
+			children = (
+				89C9CA461C252AAE00766F0E /* Extentions */,
+			);
+			path = SpriteGameplayKit;
+			sourceTree = "<group>";
+		};
+		89C9CA461C252AAE00766F0E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				89C9CA471C252B8200766F0E /* CGPointExtention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,39 +205,19 @@
 			productReference = 8969129D1AAFEE4B00B0A760 /* KungFu_SpriteKitGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		896912B51AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 896912C31AAFEE4C00B0A760 /* Build configuration list for PBXNativeTarget "KungFu_SpriteKitGameTests" */;
-			buildPhases = (
-				896912B21AAFEE4C00B0A760 /* Sources */,
-				896912B31AAFEE4C00B0A760 /* Frameworks */,
-				896912B41AAFEE4C00B0A760 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				896912B81AAFEE4C00B0A760 /* PBXTargetDependency */,
-			);
-			name = KungFu_SpriteKitGameTests;
-			productName = KungFu_SpriteKitGameTests;
-			productReference = 896912B61AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		896912951AAFEE4B00B0A760 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ChildhoodAndy;
 				TargetAttributes = {
 					8969129C1AAFEE4B00B0A760 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					896912B51AAFEE4C00B0A760 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 8969129C1AAFEE4B00B0A760;
+						DevelopmentTeam = 6RUU9PN7NF;
 					};
 				};
 			};
@@ -304,7 +235,6 @@
 			projectRoot = "";
 			targets = (
 				8969129C1AAFEE4B00B0A760 /* KungFu_SpriteKitGame */,
-				896912B51AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897CC3851C29964900C7B6DA /* fear_bg.mp3 in Resources */,
 				896912B11AAFEE4C00B0A760 /* LaunchScreen.xib in Resources */,
 				89DFA48A1AB99B0600B76945 /* InverseKinematicsTestScene.sks in Resources */,
 				896912AE1AAFEE4C00B0A760 /* Images.xcassets in Resources */,
@@ -323,13 +254,7 @@
 				89A48DD21ABA816F00721D9C /* Shader01.fsh in Resources */,
 				898BBF701AB98068003F8952 /* SKSTestScene.sks in Resources */,
 				896912AC1AAFEE4C00B0A760 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		896912B41AAFEE4C00B0A760 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8983CD3B1C29858B00A12E10 /* SKSTestScene2.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,44 +265,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				890E272F1AB5941F006C0CCE /* EntityManager.swift in Sources */,
 				89DFA4881AB99AEA00B76945 /* InverseKinematicsTestScene.swift in Sources */,
 				89A48DCD1ABA5F7200721D9C /* PhysicsFieldTestScene.swift in Sources */,
 				89A48DCF1ABA72A700721D9C /* PhysicsMagneticFieldTestScene.swift in Sources */,
 				898BBF6E1AB973D0003F8952 /* TurtlesTestScene.swift in Sources */,
 				896912A71AAFEE4C00B0A760 /* GameScene.swift in Sources */,
-				890E27251AB57056006C0CCE /* BaseGameEntity.swift in Sources */,
-				890E27291AB5752F006C0CCE /* Telegram.swift in Sources */,
-				890E272B1AB5788A006C0CCE /* FiniteStateMachine.swift in Sources */,
-				890E272D1AB578D9006C0CCE /* MessageDispatcher.swift in Sources */,
 				896912A91AAFEE4C00B0A760 /* GameViewController.swift in Sources */,
 				89A48DDA1ABBC0F200721D9C /* BoxNinjaScene.swift in Sources */,
+				8983CD3D1C2985A500A12E10 /* SKSTestScene2.swift in Sources */,
 				898BBF721AB980CE003F8952 /* SKSTestScene.swift in Sources */,
 				896912CC1AB089C200B0A760 /* DemoListScene.swift in Sources */,
-				890E27221AB5628A006C0CCE /* State.swift in Sources */,
-				890E27271AB57508006C0CCE /* World.swift in Sources */,
 				898BBF6C1AB970A2003F8952 /* SquareTurtle.swift in Sources */,
 				896912A31AAFEE4C00B0A760 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		896912B21AAFEE4C00B0A760 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				896912BD1AAFEE4C00B0A760 /* KungFu_SpriteKitGameTests.swift in Sources */,
+				89C9CA481C252B8200766F0E /* CGPointExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		896912B81AAFEE4C00B0A760 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8969129C1AAFEE4B00B0A760 /* KungFu_SpriteKitGame */;
-			targetProxy = 896912B71AAFEE4C00B0A760 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		896912AA1AAFEE4C00B0A760 /* Main.storyboard */ = {
@@ -419,6 +323,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -482,10 +387,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KungFu_SpriteKitGame/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchingame.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -493,44 +401,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KungFu_SpriteKitGame/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchingame.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		896912C41AAFEE4C00B0A760 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = KungFu_SpriteKitGameTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KungFu_SpriteKitGame.app/KungFu_SpriteKitGame";
-			};
-			name = Debug;
-		};
-		896912C51AAFEE4C00B0A760 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = KungFu_SpriteKitGameTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KungFu_SpriteKitGame.app/KungFu_SpriteKitGame";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -551,15 +428,6 @@
 			buildConfigurations = (
 				896912C11AAFEE4C00B0A760 /* Debug */,
 				896912C21AAFEE4C00B0A760 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		896912C31AAFEE4C00B0A760 /* Build configuration list for PBXNativeTarget "KungFu_SpriteKitGameTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				896912C41AAFEE4C00B0A760 /* Debug */,
-				896912C51AAFEE4C00B0A760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

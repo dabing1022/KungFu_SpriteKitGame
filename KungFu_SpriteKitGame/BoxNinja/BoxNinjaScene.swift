@@ -96,7 +96,7 @@ class BoxNinjaScene : GameScene, SKPhysicsContactDelegate {
     }
     
     func setPhysicsWorld() {
-        physicsWorld.gravity = CGVector.zeroVector
+        physicsWorld.gravity = CGVector.zero
         physicsWorld.contactDelegate = self
     }
     
@@ -104,16 +104,14 @@ class BoxNinjaScene : GameScene, SKPhysicsContactDelegate {
         leo.state = SquareTurtle.HeroState.RUNNING_L_STATE
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         super.touchesBegan(touches, withEvent: event)
         
         if leo.state == SquareTurtle.HeroState.FLYING_ON_AIR_STATE {
             return
         }
         
-        let touch = touches.first as! UITouch
         var impulse: CGVector!
-        let actionDuration = 0.5
         if leo.state == SquareTurtle.HeroState.RUNNING_L_STATE {
             impulse = CGVector(dx: Constants.impulseX, dy: 0)
         } else if leo.state == SquareTurtle.HeroState.RUNNING_R_STATE {

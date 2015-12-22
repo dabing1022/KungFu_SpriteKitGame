@@ -21,12 +21,12 @@ class SquareTurtle : SKSpriteNode {
     var state: HeroState!
     convenience init() {
 
-        self.init(texture: nil, color: nil, size: CGSize.zeroSize)
+        self.init(texture: nil, color: SKColor.clearColor(), size: CGSize.zero)
         
         state = .IDLE_STATE
     }
     
-    override init(texture: SKTexture!, color: UIColor!, size: CGSize) {
+    override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
         self.texture = nil
         self.size = CGSize(width: 32, height: 32)
@@ -40,7 +40,7 @@ class SquareTurtle : SKSpriteNode {
 
 class Leo: SquareTurtle {
 
-    override init(texture: SKTexture!, color: UIColor!, size: CGSize) {
+    override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
         self.color = SKColor(red: 1.0 / 255.0, green: 128.0 / 255.0, blue: 191.0 / 255.0, alpha: 1)
         name = "Turtle_Leo"
@@ -54,7 +54,7 @@ class Leo: SquareTurtle {
 
 class Raph: SquareTurtle {
     
-    override init(texture: SKTexture!, color: UIColor!, size: CGSize) {
+    override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
         self.color =  SKColor(red: 220.0 / 255.0, green: 56.0 / 255.0, blue: 74.0 / 255.0, alpha: 1)
         name = "Turtle_Raph"
@@ -69,7 +69,7 @@ class Raph: SquareTurtle {
 
 class Mikey: SquareTurtle {
     
-    override init(texture: SKTexture!, color: UIColor!, size: CGSize) {
+    override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
         self.color =  SKColor(red: 249.0 / 255.0, green: 150.0 / 255.0, blue: 25.0 / 255.0, alpha: 1)
         name = "Turtle_Mikey"
@@ -82,7 +82,7 @@ class Mikey: SquareTurtle {
 
 class Don: SquareTurtle {
     
-    override init(texture: SKTexture!, color: UIColor!, size: CGSize) {
+    override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
         self.color =  SKColor(red: 113.0 / 255.0, green: 132.0 / 255.0, blue: 191.0 / 255.0, alpha: 1)
         name = "Turtle_Don"

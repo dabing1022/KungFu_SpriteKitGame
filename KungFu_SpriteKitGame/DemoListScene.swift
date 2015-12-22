@@ -13,6 +13,7 @@ class DemoListScene: SKScene, UITableViewDataSource, UITableViewDelegate {
     let demos = ["GameScene/swift" : GameScene.self,
         "TurtlesTestScene/swift" : TurtlesTestScene.self,
         "SKSTestScene/sks" : SKSTestScene.self,
+        "SKSTestScene2/sks" : SKSTestScene2.self,
         "InverseKinematicsTestScene/sks" : InverseKinematicsTestScene.self,
         "PhysicsFieldTestScene/sks" : PhysicsFieldTestScene.self,
         "PhysicsMagneticFieldTestScene/swift" : PhysicsMagneticFieldTestScene.self,
@@ -35,23 +36,23 @@ class DemoListScene: SKScene, UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.removeFromSuperview()
         let transition = SKTransition.crossFadeWithDuration(1.0)
-        let text = demos.keys.array[indexPath.row] as String
+        let text = Array(demos.keys)[indexPath.row] as String
 
-        let array = text.pathComponents
-        let SceneCls = demos.values.array[indexPath.row] as SKScene.Type
+        let array = text.componentsSeparatedByString("/")
+        let SceneCls = Array(demos.values)[indexPath.row] as SKScene.Type
         var scene: SKScene!
         if array[1] == "sks" {
             scene = SceneCls.unarchiveFromFile(array[0])
             scene.scaleMode = .AspectFill
         } else {
-            scene = SceneCls(size: self.size)
+            scene = SceneCls.init(size: self.size)
         }
         self.view?.presentScene(scene, transition: transition)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseID, forIndexPath: indexPath) as! UITableViewCell
-        cell.textLabel?.text = demos.keys.array[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseID, forIndexPath: indexPath) as UITableViewCell
+        cell.textLabel?.text = Array(demos.keys)[indexPath.row]
         
         return cell
     }

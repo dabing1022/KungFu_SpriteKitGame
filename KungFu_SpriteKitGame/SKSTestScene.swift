@@ -29,11 +29,11 @@ class SKSTestScene : GameScene {
     }
     
     
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
-        let touch = touches.first as! UITouch
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        let touch = touches.first
         let ship = self.childNodeWithName("ship") as! SKSpriteNode
         let light = ship.childNodeWithName("light2") as! SKLightNode
-        let pos = touch.locationInNode(ship)
+        let pos = touch!.locationInNode(ship)
         
         let greenSquare = self.childNodeWithName("greenSquare") as! SKSpriteNode
         light.position = pos

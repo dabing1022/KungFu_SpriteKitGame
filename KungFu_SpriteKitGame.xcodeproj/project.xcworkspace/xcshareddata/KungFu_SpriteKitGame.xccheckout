@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BC587B88-D5F6-4A44-A8C4-200E859247C9</string>
 	<key>IDESourceControlProjectName</key>
-	<string>KungFu_SpriteKitGame</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C45EBED4DEFD9F93CAA4F70BBF198B0BD9B7BCE9</key>
 		<string>https://github.com/dabing1022/KungFu_SpriteKitGame.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>KungFu_SpriteKitGame.xcodeproj</string>
+	<string>KungFu_SpriteKitGame.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C45EBED4DEFD9F93CAA4F70BBF198B0BD9B7BCE9</key>

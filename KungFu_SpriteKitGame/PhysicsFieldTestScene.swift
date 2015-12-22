@@ -35,7 +35,7 @@ class PhysicsFieldTestScene: GameScene {
         
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
         let fieldTag = childNodeWithName("FieldTag")!
         let fieldNode = childNodeWithName("FieldNode")! as! SKFieldNode
@@ -179,9 +179,6 @@ class PhysicsFieldTestScene: GameScene {
             electricField!.removeFromParent()
             
             fieldNode.strength = 1
-            
-        default:
-            println("wrong")
         }
         
         super.touchesBegan(touches, withEvent: event)
